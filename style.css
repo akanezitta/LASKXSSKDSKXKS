@@ -1,0 +1,184 @@
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fffefe, #ffffff);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* Header Styles */
+
+header {
+    background-color: #c10606;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+}
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+nav h1 {
+    font-size: 28px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section Styles */
+#hero {
+    background-color: #c10606;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 30px auto;
+}
+#hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+#hero p {
+    font-size: 18px;
+    color: #fffefe;
+}
+
+/* Product Section Styles */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+.product-card {
+    background-color: #c10606;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgb(255, 255, 255);
+    width: 220px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgb(255, 255, 255);
+}
+.product-card h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.product-card p {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+button:hover {
+    background-color: #c10606;
+    transform: scale(1.05);
+}
+
+/* About Section Styles */
+#about {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #c10606;
+    border-radius: 8px;
+    margin: 30px auto;
+}
+#about h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#about p {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* Contact Section Styles */
+#contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #c10606;
+    border-radius: 8px;
+    margin: 30px auto;
+}
+#contact h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#contact p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+form input,
+form textarea {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+form button {
+    background-color: #ff0000 color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+form button:hover {
+    background-color: #ff0000;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}

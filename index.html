@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojinha Virtual Personalizada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Lojinha do Amor</h1>
+            <ul>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="hero">
+            <h2>Escolha um presente especial obs: só vale 1 por vez</h2>
+            <p>Tive essa ideia por saber que o namorado é um vendedor nato, então porque não fazer uma lojinha para ele , né? Essa lojinha foi feita para o namorado receber amor❤️❤️❤️</p>
+        </section>
+
+        <section id="products" class="products">
+            <div class="product-card">
+                <h3>Jogar juntos o jogo que o namorado escolher✨</h3>
+                <p>Resgate essa oferta e bora jogar o jogo que o namorado escolher ( sei que vou ser carregada)😔.</p>
+                <button id="resgatar-jogo">Resgatar</button>
+            </div>
+
+            <div class="product-card">
+                <h3>Filme Juntos</h3>
+                <p>Vamos assistir aquele filme que você tanto fala no nosso dia especial💕.</p>
+                <button id="resgatar-filme">Resgatar</button>
+            </div>
+
+            <div class="product-card">
+                <h3>Video especial</h3>
+                <p> O namorado vai ter um video especial da namorada como ele escolher 😇.</p>
+                <button id="resgatar-video">Resgatar</button>
+            </div>
+
+            <div class="product-card">
+                <h3>Surpresa!</h3>
+                <p>Uma surpresa especial?. O que será?😲</p>
+                <button id="resgatar-surpresa">Resgatar</button>
+            </div>
+        </section>
+        <!-- Seção Contato -->
+        <section id="contact">
+            <h2>Contato</h2>
+            <p> Você tem meu WhatsApp , né? 🤔.</p>
+            </form>
+            <!-- Seção Sobre -->
+            <section id="about">
+                <h2>Sobre</h2>
+                <p>Dois meses e parece que já estamos juntos há 10 anos. É incrível passar meus dias ao seu lado. Eu te amo demais e sou eternamente grata por tudo que você fez e continua fazendo por mim. Você é o melhor namorado do mundo, e eu me sinto
+                    a pessoa mais sortuda por ter te encontrado. Você me completa de uma forma única, e cada momento ao seu lado é especial. Eu só desejo que continuemos juntos para sempre. Obrigada por ser exatamente quem você é.
+    </main>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lojinha do Amor. Eu te amo ♾️.</p>
+    </footer>
+
+    <script>
+        // Função para gerar um código único de resgate
+        function gerarCodigo() {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            let codigo = '';
+            for (let i = 0; i < 8; i++) {
+                codigo += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return codigo;
+        }
+
+        // Função para enviar a mensagem para o WhatsApp
+        function enviarWhatsApp(presente) {
+            const codigo = gerarCodigo();
+            const numero = "5535991416953"; // Coloque o número de WhatsApp que vai receber a mensagem (com código de país)
+            const mensagem = `Parabéns! Você resgatou o presente "${presente}". Seu código único de resgate é: ${codigo}.`;
+
+            const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+            window.open(url, '_blank'); // Abre o WhatsApp em uma nova aba
+        }
+
+        // Associando as funções aos botões de resgate
+        document.getElementById('resgatar-conversa').onclick = function() {
+            enviarWhatsApp('1 Hora de Conversa');
+        };
+
+        document.getElementById('resgatar-filme').onclick = function() {
+            enviarWhatsApp('Filme Juntos');
+        };
+
+        document.getElementById('resgatar-musica').onclick = function() {
+            enviarWhatsApp('Música Especial');
+        };
+
+        document.getElementById('resgatar-surpresa').onclick = function() {
+            enviarWhatsApp('Surpresa');
+        };
+    </script>
+</body>
+
+</html>
