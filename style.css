@@ -1,5 +1,3 @@
-/* Global Styles */
-
 * {
     margin: 0;
     padding: 0;
@@ -8,10 +6,10 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #fffefe, #ffffff);
-    background-size: cover;
-    background-position: center;
-    color: #ffffff;
+    background-color: #fff;
+    /* Fundo branco para um visual minimalista */
+    color: #000;
+    /* Mudança para texto preto */
     line-height: 1.6;
 }
 
@@ -19,54 +17,75 @@ body {
 /* Header Styles */
 
 header {
-    background-color: #c10606;
-    color: rgb(255, 255, 255);
-    padding: 20px;
-    box-shadow: 0 4px 8px rgb(255, 255, 255);
+    background-color: #c62828;
+    /* Vermelho escuro */
+    color: #000;
+    /* Texto preto */
+    padding: 15px;
+    /* Ajustado para um layout mais minimalista */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-display: flex;
-justify-content: space-between;
-align-items: center;
-
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
 nav h1 {
-    font-size: 28px;
+    font-size: 24px;
 }
+
 nav ul {
     list-style: none;
     display: flex;
 }
+
 nav ul li {
-    margin-left: 20px;
+    margin-left: 15px;
 }
+
 nav ul li a {
-    color: white;
+    color: #000;
+    /* Texto preto */
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 400;
+    /* Ajustado para um visual mais leve */
 }
+
 nav ul li a:hover {
     text-decoration: underline;
 }
 
+
 /* Hero Section Styles */
+
 #hero {
-    background-color: #c10606;
-    padding: 50px 20px;
+    background-color: #f44336;
+    /* Vermelho claro */
+    padding: 40px 20px;
+    /* Ajustado para menos padding */
     text-align: center;
     border-radius: 8px;
-    margin: 30px auto;
-}
-#hero h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-#hero p {
-    font-size: 18px;
-    color: #fffefe;
+    margin: 20px auto;
 }
 
+#hero h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #000;
+    /* Texto preto */
+}
+
+#hero p {
+    font-size: 16px;
+    color: #fff;
+    /* Texto branco para contraste */
+}
+
+
 /* Product Section Styles */
+
 .products {
     display: flex;
     flex-wrap: wrap;
@@ -74,84 +93,120 @@ nav ul li a:hover {
     gap: 20px;
     padding: 40px 0;
 }
+
 .product-card {
-    background-color: #c10606;
+    background-color: #fff;
+    /* Manter fundo branco para as cartas */
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgb(255, 255, 255);
-    width: 220px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
+    /* Ajustado para menos padding */
     transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .product-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
+
 .product-card h3 {
-    color: #ffffff;
-    font-size: 20px;
-    margin-bottom: 10px;
+    color: #c62828;
+    /* Vermelho escuro */
+    font-size: 18px;
+    margin-bottom: 5px;
 }
+
 .product-card p {
-    color: #ffffff;
+    color: #000;
+    /* Texto preto */
     font-size: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    /* Ajustado para um visual mais compacto */
 }
+
 button {
-    background-color: #000000;
+    background-color: #c62828;
+    /* Vermelho escuro */
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 8px 15px;
+    /* Ajustado para menos padding */
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
+    /* Menor tamanho para um visual mais minimalista */
     transition: background-color 0.3s, transform 0.3s;
 }
+
 button:hover {
-    background-color: #c10606;
+    background-color: #b71c1c;
+    /* Vermelho mais escuro ao passar o mouse */
     transform: scale(1.05);
 }
 
+
 /* About Section Styles */
+
 #about {
     text-align: center;
-    padding: 50px 20px;
-    background-color: #c10606;
+    padding: 40px 20px;
+    /* Menos padding */
+    background-color: #f33e3e;
+    /* Camada mais clara para contraste */
     border-radius: 8px;
-    margin: 30px auto;
-}
-#about h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-#about p {
-    font-size: 18px;
-    color: #ffffff;
+    margin: 20px auto;
 }
 
+#about h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #000;
+    /* Texto preto */
+}
+
+#about p {
+    font-size: 16px;
+    color: #000;
+    /* Texto preto */
+}
+
+
 /* Contact Section Styles */
+
 #contact {
     text-align: center;
-    padding: 50px 20px;
-    background-color: #c10606;
+    padding: 40px 20px;
+    /* Menos padding */
+    background-color: #f33e3e;
+    /* Tom suave de vermelho */
     border-radius: 8px;
-    margin: 30px auto;
+    margin: 20px auto;
 }
+
 #contact h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #000;
+    /* Texto preto */
 }
+
 #contact p {
-    font-size: 18px;
-    color: #ffffff;
-    margin-bottom: 20px;
+    font-size: 16px;
+    color: #000;
+    /* Texto preto */
+    margin-bottom: 15px;
 }
+
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
+    /* Menor espaçamento */
 }
+
 form input,
 form textarea {
     width: 300px;
@@ -160,25 +215,34 @@ form textarea {
     border-radius: 5px;
     font-size: 16px;
 }
+
 form button {
-    background-color: #ff0000 color: white;
+    background-color: #c62828;
+    /* Vermelho escuro */
+    color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 8px 15px;
+    /* Menos padding */
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
     transition: background-color 0.3s, transform 0.3s;
 }
+
 form button:hover {
-    background-color: #ff0000;
+    background-color: #b71c1c;
+    /* Vermelho mais escuro ao passar o mouse */
     transform: scale(1.05);
 }
 
+
 /* Footer Styles */
+
 footer {
-    background-color: #ff0000;
+    background-color: #c62828;
+    /* Vermelho escuro */
     color: white;
     text-align: center;
     padding: 10px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
